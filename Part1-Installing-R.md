@@ -6,11 +6,11 @@
 
 1. Download the (lastest version of R)[https://cran.r-project.org/mirrors.html] (use the _base_ binaries).
 2. Run the installer and select the default folder.
-3. On the *Select Component* page select _User Installation_. On a 64-bit machine this will include both 32-bit and 64-bit files.
+3. On the __Select Component__ page select _User Installation_. On a 64-bit machine this will include both 32-bit and 64-bit files.
 
 ![01-installer-select-components](Part1-Content/01-installer-select-components.png)
 
-4. On the *Startup options* page select the default _No_ option.
+4. On the __Startup options__ page select the default _No_ option.
 
 ![02-startup-options](Part1-Content/02-startup-options.png)
 
@@ -31,8 +31,8 @@ Easy
 
 Depending on your screen resolution and DPI, RStudio may appear small and hard to read. To improve this follow these steps:
 
-1. Go to *Tools > Global Options > Appearance*
-2. Use the *Zoom* and *Font size* settings to improve the appearance. On a 4K display at 250% DPI, I found 150% zoom and a font size of 12 works well for me.
+1. Go to __Tools > Global Options > Appearance__
+2. Use the __Zoom__ and __Font size__ settings to improve the appearance. On a 4K display at 250% DPI, I found 150% zoom and a font size of 12 works well for me.
 
 
 ![03-zoom](Part1-Content/03-zoom.png)
