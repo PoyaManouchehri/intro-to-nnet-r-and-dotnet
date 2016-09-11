@@ -31,8 +31,13 @@ Easy
 
 Depending on your screen resolution and DPI, RStudio may appear small and hard to read. To improve this follow these steps:
 
-1. Go to __Tools > Global Options > Appearance__
+1. Open __RStudio__ (type RStudio in start menu).
+1. Go to __Tools > Global Options > Appearance__.
 2. Use the __Zoom__ and __Font size__ settings to improve the appearance. On a 4K display at 250% DPI, I found 150% zoom and a font size of 12 works well for me.
 
 
 ![03-zoom](Part1-Content/03-zoom.png)
+
+## End of Part 1
+
+You now have R and RStudio, and ready to get started. Proceed to [Part 2](Part2-Installing-Packages.md)
