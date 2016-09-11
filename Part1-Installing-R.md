@@ -12,7 +12,7 @@
 
 4. On the *Startup options* page select the default _No_ option.
 
-![02-startup-options](Part1-Content/01-startup-options.png)
+![02-startup-options](Part1-Content/02-startup-options.png)
 
 5. Use the default options for the remainder of the screens.
 
