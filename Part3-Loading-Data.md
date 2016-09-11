@@ -10,7 +10,7 @@ For this workshop we will be using a bank marketing data set taken from the [UCI
 2. In __RStudio__ create a new R script with __File > New File > R Script__. Save and call it `RWokshop.R` or whatever else you fancy.
 3. Let's create a new function called `loadBankMarketingData()`:
 
-  ```
+  ```R
   loadBankMarketingData <- function()
   {
   }
@@ -18,15 +18,15 @@ For this workshop we will be using a bank marketing data set taken from the [UCI
   
 4. R makes it very simple to load a CSV (and other common data files). On the first line of your function call `read.csv()`:
 
-  ```
-  bankData = read.csv("C:/Path/ToYourCsv/BankMarketing.csv")
+  ```R
+  bankData <- read.csv("C:/Path/ToYourCsv/BankMarketing.csv")
   ```
   
   Note that no semicolons are used in R. 
   
 5. We can now return the result:
 
-  ```
+  ```R
   return(bankData)
   ```
   
@@ -36,7 +36,7 @@ Now that we have written and saved the script, we can call it from an R session 
 
 1. Try callig the function from the console:
 
-  ```
+  ```R
   loadBankMarketingData()
   ```
   
@@ -44,7 +44,7 @@ Now that we have written and saved the script, we can call it from an R session 
   
 2. In order to access the function we first need to make it available to the current session. In the console enter:
 
-  ```
+  ```R
   source("C:/Path/ToYourScript/BWorkshop.R")
   ```
   
@@ -54,7 +54,7 @@ Now that we have written and saved the script, we can call it from an R session 
 
 4. Now call the function again
 
-  ```
+  ```R
   loadBankMarketingData()
   ```
   
@@ -66,7 +66,7 @@ Now that we have written and saved the script, we can call it from an R session 
   
 5. Again in the console call the function, but this time assign the result to a global variable
 
-  ```
+  ```R
   data <- loadBankMarketingData()
   ```
   
