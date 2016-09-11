@@ -4,7 +4,7 @@
 
 The goal of this workshop is to familiarize you with the very basics of R and RStudio, how to install and import existing packages for the purpose of training a neural network, and the very basics of integrating your work in a .NET application.
 
-1. Installing R and RStudio
+1. [Installing R and RStudio](Part1-Installing-R.md)
 2. Installing R packages
 3. Loading data from a CSV file
 4. Pre-processing the data
