@@ -40,4 +40,4 @@ Depending on your screen resolution and DPI, RStudio may appear small and hard t
 
 ## End of Part 1
 
-You now have R and RStudio, and ready to get started. Proceed to [Part 2](Part2-Installing-Packages.md)
+You now have R and RStudio, and ready to get started. Proceed to [Part 2 - Installing Packages](Part2-Installing-Packages.md)

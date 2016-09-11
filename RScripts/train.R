@@ -1,6 +1,6 @@
 run <- function()
 {
-  bankData = preProcessData(read.csv("C:/Dev/Readify/Presentations/NNWorkshop/bank.csv"))
+  bankData = preProcessData(read.csv("C:/Dev/Readify/Presentations/intro-to-nnet-r-and-dotnet/Data/Bank.csv"))
   set.seed(1)
   sampleIndices = sample(nrow(bankData), 600)
   testSet = bankData[sampleIndices,]
@@ -24,6 +24,6 @@ run <- function()
 
 train <- function(trainingSet)
 {
-  nn <- nnet(y~., trainingSet, MaxNWts=5000, size=25, maxit=10000)
+  nn <- nnet(y~., trainingSet, MaxNWts=5000, size=15, maxit=10000)
   return(nn)
 }
