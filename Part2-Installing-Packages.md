@@ -11,14 +11,14 @@ RStudio allows you to install packages through the UI, but we will do it more qu
 
 1. Open __RStudio__.
 2. In the console window, enter the following command: 
-  ```
+  ```R
   installed.packages()
   ```
 
   This will display a list of currently installed packages.
 
 3. Now enter:
-  ```
+  ```R
   install.packages("nnet")
   ```
 
@@ -30,12 +30,12 @@ RStudio allows you to install packages through the UI, but we will do it more qu
 In order to use a package, it needs to be _attached_ to the current R session. We will need to do this at the beginning of each R session (it can be added to our scripts)
 
 1. Use the `library()` function to attach __nnet__ (note quotation marks are _not_ used):
-  ```
+  ```R
   library(nnet)
   ```
 
 2. Now enter:
-  ```
+  ```R
   print(nnet)
   ```
 
