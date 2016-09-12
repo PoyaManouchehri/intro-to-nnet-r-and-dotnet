@@ -55,7 +55,7 @@ We previously installed and attached the `nnet` package which we will use to tra
   return(bankModel)
   ```
 
-3. Before we test our neural network, let's run the training and see what happens. Execute your new function from the command line:
+3. Before we test our neural network, let's run the training and see what happens. Execute your new function from the __console__:
   ```R
   trainBankModel()
   ```
@@ -77,12 +77,18 @@ Unlike some other machine learning methods like decision trees, a neural network
 
 3. Check the __Source on Save__ checkbox and save the file.
 
-4. In the `trainBankModel()` function, after training the model, use the `plot()` method with your model:
+4. In the __console__ window run the training and store the result in a global variable:
 
+  ```R
+  bankModel <- trainBankModel()
+  ```
+  
+5. Now use the `plot()` function to visualize the neural network:
   ```
   plot(bankModel)
   ```
-5. Now execute the training function from the console again. What do you see? Can you explain what all the input variables are?
+  
+  What do you see? Can you explain what all the input variables are? (If the plot window is too cluttered, click the __zoom__ button to expand it out to a new window. Reducing the global zoom in __Tools > Global Options > Appearance__ can also help with reducing the clutter.)
 
 > __Explanation:__ You will notice that as described in [Part4](Part4.md), the categorical variables are expanded out into multiple inputs with each input being one of the possible options. Also look at the connections going from the inputs to the hidden layer, and from the hidden layer to the output. Darker lines represent a larger value. Keep in mind that just by looking at these weights it's not possible to easily determine one variable being more important than another. Often there are complex, non-linear relationships between these variables that are important, wich is why we use a machine learning technique in the first place.
 
