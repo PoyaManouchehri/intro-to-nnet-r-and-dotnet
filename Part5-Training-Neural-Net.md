@@ -143,3 +143,17 @@ We now have a model trained. Let's see how well it performs over our test data. 
   print(paste("Correct - No:", correctNo*100/noTotal))
   ```
   
+7. Call the new `testBankModel()` function from `trainBankModel()` just before returning the model.
+
+8. Now call `trainBankModel()` from the __console__. You should see the test results.
+
+
+##Additional Experiments and Questions
+
+* What do you notice about the correct _yes_ and _no_ predictions?
+* Why do you think the _yes_ predictions do poorly compared to _no_ predictions?
+* Try changing the `Size` parameter (number of neurons in the hidden layer) to different values like 10, 15 and 20, and run the training again. What do you notice?
+* Try setting the `maxit` parameter to 1 before training. What do you notice? Why?
+
+##End of Part 5
+We have successfully trained a neural network on our data, and used it to make predictions. Please move on to [Part 6 - Integrating R in an MVC web application](Part6-DotNet-Integration.md)
