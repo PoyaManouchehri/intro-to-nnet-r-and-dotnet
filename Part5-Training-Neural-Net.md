@@ -93,3 +93,53 @@ Unlike some other machine learning methods like decision trees, a neural network
 > __Explanation:__ You will notice that as described in [Part4](Part4.md), the categorical variables are expanded out into multiple inputs with each input being one of the possible options. Also look at the connections going from the inputs to the hidden layer, and from the hidden layer to the output. Darker lines represent a larger value. Keep in mind that just by looking at these weights it's not possible to easily determine one variable being more important than another. Often there are complex, non-linear relationships between these variables that are important, wich is why we use a machine learning technique in the first place.
 
 
+# Making Predictions and Testing the Model
+
+We now have a model trained. Let's see how well it performs over our test data. We're going to measure 3 metrics:
+* Percentage of overall correct predictions
+* Precentage of correct _yes_ predictions
+* Percentage of correct _no_ predictions
+
+1. Create a new function in `RWorkshop.R` called `testBankModel()`:
+  ```R
+  testBankModel <- function(testData)
+  {
+  }
+  ```
+
+2. In the function, use `predict()` to calculate the predictions for each row. We need to exclude the output column, since that's what the neural network will be predicting:
+  ```R
+  outputCol <- length(testSet)
+  testPredictions <- predict(bankModel, testSet[,-outputCol], type="class")
+  ```
+  
+  The `type` argument tells the `predict()` function to return the string value (yes or no) instead of a numerical value (a probability between 0 and 1)
+
+3. To get the percentages let's first get the totals from our test set:
+  ```R
+  total <- nrow(testSet)
+  yesTotal <- length(which(testSet[, outputCol] == "yes"))
+  noTotal <- total - yesTotal
+  ```
+  
+4. Now let's count how many of our predictions matched what was in output column of the test set:
+  ```R
+  matches <- testPredictions[which(testPredictions == testSet[, outputCol])]
+  ```
+  
+  This will produce a subset of our predictions that matched what was in the test set.
+
+5. Count the correct predictions
+  ```R
+  correctTotal <- length(matches)
+  correctYes <- length(which(matches == c("yes")))
+  correctNo <- correctTotal - correctYes
+  ```
+  
+6. And print the percentages
+  ```R
+  print(paste("Correct - Total:", correctTotal*100/total))
+  print(paste("Correct - Yes:", correctYes*100/yesTotal))
+  print(paste("Correct - No:", correctNo*100/noTotal))
+  ```
+  
