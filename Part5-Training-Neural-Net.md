@@ -92,6 +92,7 @@ Unlike some other machine learning methods like decision trees, a neural network
 
 > __Explanation:__ You will notice that as described in [Part4](Part4.md), the categorical variables are expanded out into multiple inputs with each input being one of the possible options. Also look at the connections going from the inputs to the hidden layer, and from the hidden layer to the output. Darker lines represent a larger value. Keep in mind that just by looking at these weights it's not possible to easily determine one variable being more important than another. Often there are complex, non-linear relationships between these variables that are important, wich is why we use a machine learning technique in the first place.
 
+![02-model-visualization](Part5-Content/02-model-visualization.png)
 
 # Making Predictions and Testing the Model
 
