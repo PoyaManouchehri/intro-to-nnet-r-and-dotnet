@@ -1,0 +1,129 @@
+﻿@model BankMarketingWebsite.Models.InputParameters
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Predictions</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"></head>
+<body>
+<div class="container">
+    <h1>Client Details</h1>
+    @using (Html.BeginForm())
+    {
+        <div class="row">
+            <div class="form-group col-sm-6">
+                @Html.LabelFor(x => x.Age, "Age")
+                @Html.TextBoxFor(x => x.Age, new { @class = "form-control" })
+            </div>
+            <div class="form-group col-sm-6">
+                @Html.LabelFor(x => x.Job, "Job")
+                @Html.DropDownListFor(x => x.Job, Model.JobOptions, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-sm-6">
+                @Html.LabelFor(x => x.Marital, "Marital")
+                @Html.DropDownListFor(x => x.Marital, Model.MaritalOptions, new { @class = "form-control" })
+            </div>
+            <div class="form-group col-sm-6">
+                @Html.LabelFor(x => x.Education, "Education")
+                @Html.DropDownListFor(x => x.Education, Model.EducationOptions, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-sm-6">
+                @Html.LabelFor(x => x.Default, "Default")
+                @Html.DropDownListFor(x => x.Default, Model.DefaultOptions, new { @class = "form-control" })
+            </div>
+            <div class="form-group col-sm-6">
+                @Html.LabelFor(x => x.Housing, "Housing")
+                @Html.DropDownListFor(x => x.Housing, Model.HousingOptions, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-sm-6">
+                @Html.LabelFor(x => x.Loan, "Loan")
+                @Html.DropDownListFor(x => x.Loan, Model.LoanOptions, new { @class = "form-control" })
+            </div>
+            <div class="form-group col-sm-6">
+                @Html.LabelFor(x => x.Contact, "Contact")
+                @Html.DropDownListFor(x => x.Contact, Model.ContactOptions, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-sm-6">
+                @Html.LabelFor(x => x.Month, "Month")
+                @Html.DropDownListFor(x => x.Month, Model.MonthOptions, new { @class = "form-control" })
+            </div>
+            <div class="form-group col-sm-6">
+                @Html.LabelFor(x => x.DayOfWeek, "DayOfWeek")
+                @Html.DropDownListFor(x => x.DayOfWeek, Model.DayOfWeekOptions, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-sm-6">
+                @Html.LabelFor(x => x.Campaign, "Campaign")
+                @Html.TextBoxFor(x => x.Campaign, new { @class = "form-control" })
+            </div>
+            <div class="form-group col-sm-6">
+                @Html.LabelFor(x => x.PDays, "PDays")
+                @Html.TextBoxFor(x => x.PDays, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-sm-6">
+                @Html.LabelFor(x => x.Previous, "Previous")
+                @Html.TextBoxFor(x => x.Previous, new { @class = "form-control" })
+            </div>
+            <div class="form-group col-sm-6">
+                @Html.LabelFor(x => x.POutcome, "POutcome")
+                @Html.DropDownListFor(x => x.POutcome, Model.POutcomeOptions, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-sm-6">
+                @Html.LabelFor(x => x.EmpVarRate, "EmpVarRate")
+                @Html.TextBoxFor(x => x.EmpVarRate, new { @class = "form-control" })
+            </div>
+            <div class="form-group col-sm-6">
+                @Html.LabelFor(x => x.ConsPriceIdx, "ConsPriceIdx")
+                @Html.TextBoxFor(x => x.ConsPriceIdx, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-sm-6">
+                @Html.LabelFor(x => x.ConsConfIdx, "ConsConfIdx")
+                @Html.TextBoxFor(x => x.ConsConfIdx, new { @class = "form-control" })
+            </div>
+            <div class="form-group col-sm-6">
+                @Html.LabelFor(x => x.Euribor3m, "Euribor3m")
+                @Html.TextBoxFor(x => x.Euribor3m, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-6">
+                @Html.LabelFor(x => x.NrEmployed, "NrEmployed")
+                @Html.TextBoxFor(x => x.NrEmployed, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <input type="submit" value="Will They Sign Up?" class="btn btn-primary">
+    }
+</div>
+</body>
+</html>
