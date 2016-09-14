@@ -34,7 +34,7 @@ Another useful optimization is standardizing numerical data so that different in
 3. Next we will apply the `scale()` function to these columns which centers and scales them to mean = 0, sd = 1. R allows us to use the boolean vector created above as a way to index into our data frame:
 
   ```R
-  bankData[isIntegerCol] <- lapply(bankData[isIntegerCol], scale)
+  bankData[isIntegerCol] <- sapply(bankData[isIntegerCol], scale)
   ```
   
   The completed function should look like this:

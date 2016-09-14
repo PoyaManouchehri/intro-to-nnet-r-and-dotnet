@@ -16,7 +16,7 @@ namespace BankMarketingWebsite.Models
             HousingOptions = ToSelectList("no", "yes", "unknown");
             LoanOptions = ToSelectList("no", "yes", "unknown");
             ContactOptions = ToSelectList("cellular", "telephone");
-            MonthOptions = ToSelectList("jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dev");
+            MonthOptions = ToSelectList("mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dev");
             DayOfWeekOptions = ToSelectList("mon", "tue", "wed", "thu", "fri");
             POutcomeOptions = ToSelectList("failure", "nonexistent", "success");
         }
