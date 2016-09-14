@@ -19,7 +19,7 @@ trainBankModel <- function()
   testSet <- bankData[testIndices,]
   trainingSet <- bankData[-testIndices,]
   
-  bankModel <- nnet(Y~., trainingSet, size=10, MaxNWts=5000, maxit=2000, rang=0.1)
+  bankModel <- nnet(Y~., trainingSet, size=10, MaxNWts=5000, maxit=2000)
   testBankModel(bankModel, testSet)
 
   saveRDS(bankModel, file='C:/Dev/Readify/Presentations/intro-to-nnet-r-and-dotnet/RScripts/MyModel')
@@ -40,7 +40,7 @@ testBankModel <- function(bankModel, testSet)
   correctTotal <- length(matches)
   correctYes <- length(which(matches == c("yes")))
   correctNo <- correctTotal - correctYes
-  
+
   print(paste("Correct - Total:", correctTotal*100/total))
   print(paste("Correct - Yes:", correctYes*100/yesTotal))
   print(paste("Correct - No:", correctNo*100/noTotal))
