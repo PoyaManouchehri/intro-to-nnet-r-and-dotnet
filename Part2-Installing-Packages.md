@@ -1,16 +1,16 @@
 #2. Installing R Packages
 
-One of the biggest selling points of R is access to the rich set of statistical and visualisation packages that have been written for it by the community and organizations. Moreover, R makes it extremely trivial to import and use these packages both from its console, and from a R script.
+One of the biggest selling points of R is access to a rich set of statistical and visualisation packages that have been written by the community and contributing organizations. Moreover, R makes it extremely trivial to import and use these packages both from its console, and from a R script.
 
 You can see a full list of community contributed packages [here](https://cran.r-project.org/web/packages/). This is the default source which R looks at for fetching packages. For the purposes of this workshop we will be using a package called [nnet](https://cran.r-project.org/web/packages/nnet/index.html), a popular implementation of a feed-forward neural network. We'll also indirectly use the [scales](https://cran.r-project.org/web/packages/scales/index.html) package for visualization.
 
 
 ##Installing Packages
 
-RStudio allows you to install packages through the UI, but we will do it more quickly from the command line.
+RStudio allows you to install packages through the UI, but we will do it more quickly from the console.
 
 1. Open __RStudio__.
-2. In the console window, enter the following command: 
+2. In the __console__ window, enter the following command: 
   ```R
   installed.packages()
   ```
@@ -24,7 +24,7 @@ RStudio allows you to install packages through the UI, but we will do it more qu
 
   This should begin the process of downloading and installing the `nnet` package and any dependencies. You can check that the package was installed by running `installed.packages()` again.
   
-4. Repeat the process for `scales` package:
+4. Repeat the process for the `scales` package:
   ```R
   install.packages("scales")
   ```
@@ -39,7 +39,7 @@ In order to use a package, it needs to be _attached_ to the current R session. W
   library(nnet)
   ```
 
-2. Now enter:
+2. Enter:
   ```R
   print(nnet)
   ```
