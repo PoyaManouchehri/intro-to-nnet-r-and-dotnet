@@ -13,6 +13,6 @@ The goal of this workshop is to familiarize you with the very basics of R and RS
 
 ##Other Resources:
 
-[Swirl](http://swirlstats.com/)
-[Coursera - Neural Networks for Machine Learning](https://www.coursera.org/learn/neural-networks)
-[Coursera - Machine Learning](https://www.coursera.org/learn/machine-learning)
+* [Swirl](http://swirlstats.com/)
+* [Coursera - Neural Networks for Machine Learning](https://www.coursera.org/learn/neural-networks)
+* [Coursera - Machine Learning](https://www.coursera.org/learn/machine-learning)
