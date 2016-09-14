@@ -55,4 +55,4 @@ Another useful optimization is standardizing numerical data so that different in
   
 #End of Part 4
 
-Our data set is now ready for [Part 5 - Training a neural network](Part5-Training-Neural-Net).
+Our data set is now ready for [Part 5 - Training a neural network](Part5-Training-Neural-Net.md).
