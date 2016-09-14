@@ -1,4 +1,4 @@
-## Introduction to Netural Networks in R, and Integration with .NET
+## Introduction to Neural Networks in R, and Integration with .NET
 
 ### Overview
 
