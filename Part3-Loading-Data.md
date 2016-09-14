@@ -2,12 +2,14 @@
 
 ##Bank Marketing Data Set
 
-For this workshop we will be using a bank marketing data set taken from the [UCI Machine Learning Repository] (https://archive.ics.uci.edu/ml/index.html). This dataset contains about 4500 records of marketing campaign calls to the clients of a Portuguese bank. Each record contains a number of input variables likage __age__, __occupation__, and the __month__, and a simple __yes/no__ output variable indicating whether or not the client subscribed to the product on offer. For a more detailed explanation of the data set and its parameters, click [here](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing).
+For this workshop we will be using a bank marketing data set taken from the [UCI Machine Learning Repository] (https://archive.ics.uci.edu/ml/index.html). This dataset contains about 4500 records of marketing campaign calls to the clients of a Portuguese bank. Each record contains a number of input variables like __age__, __occupation__, and the __month__ when a client was last called, and a simple __yes/no__ output variable indicating whether or not that client subscribed to the product on offer. For a more detailed explanation of the data set and its parameters, click [here](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing).
+
+Ultimately what we want to be able to predict more reliably whether or not a given client is likely to respond to the bank's future marketing campaigns.
 
 ##Loading the CSV
 
 1. Download and copy [BankMarketing.csv](Data/BankMarketing.csv) to a location of your choice
-2. In __RStudio__ create a new R script with __File > New File > R Script__. Save and call it `RWokshop.R` or whatever else you fancy.
+2. In __RStudio__ create a new R script with __File > New File > R Script__. Save and call it `RWokshop.R`.
 3. Let's create a new function called `loadBankMarketingData()`:
 
   ```R
@@ -16,7 +18,7 @@ For this workshop we will be using a bank marketing data set taken from the [UCI
   }
   ```
   
-4. R makes it very simple to load a CSV (and other common data files). On the first line of your function call `read.csv()`:
+4. R makes it very simple to load a CSV (and other common data file types). On the first line of your function call `read.csv()`:
 
   ```R
   bankData <- read.csv("C:/Path/ToYourCsv/BankMarketing.csv")
@@ -34,7 +36,7 @@ For this workshop we will be using a bank marketing data set taken from the [UCI
 
 Now that we have written and saved the script, we can call it from an R session or in our case, the RStudio console.
 
-1. Try callig the function from the console:
+1. Try calling the function from the console:
 
   ```R
   loadBankMarketingData()
@@ -42,7 +44,7 @@ Now that we have written and saved the script, we can call it from an R session 
   
   What happens?
   
-2. In order to access the function we first need to make it available to the current session. In the console enter:
+2. In order to access the function we first need to make it available in the current session. In the console enter:
 
   ```R
   source("C:/Path/ToYourScript/BWorkshop.R")
@@ -58,13 +60,13 @@ Now that we have written and saved the script, we can call it from an R session 
   loadBankMarketingData()
   ```
   
-  The output of our function is a _data frame_, an important data structure in R which holds a table of data which can have different column types. By default R will call the `print()` on the output of our function and to try to write out something useful. In this case you will see some of the CSV data followed by something like this:
+  The output of our function is a _data frame_; an important data structure in R. A data frame is a table of data which can have different column types. By default R will call the `print()` on the output of our function and to try to write out something useful. In this case you will see some of the CSV data followed by something like this:
   
   ```
   [ reached getOption("max.print") -- omitted 3933 rows ]
   ```
   
-5. Again in the console call the function, but this time assign the result to a global variable
+5. Again in the console call the function, but this time assign the result to a global variable.
 
   ```R
   data <- loadBankMarketingData()
