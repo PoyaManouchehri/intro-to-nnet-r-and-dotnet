@@ -4,7 +4,7 @@
 
 For this workshop we will be using a bank marketing data set taken from the [UCI Machine Learning Repository] (https://archive.ics.uci.edu/ml/index.html). This dataset contains about 4500 records of marketing campaign calls to the clients of a Portuguese bank. Each record contains a number of input variables like __age__, __occupation__, and the __month__ when a client was last called, and a simple __yes/no__ output variable indicating whether or not that client subscribed to the product on offer. For a more detailed explanation of the data set and its parameters, click [here](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing).
 
-Ultimately what we want to be able to predict more reliably whether or not a given client is likely to respond to the bank's future marketing campaigns.
+Ultimately what we want to predict whether or not a client is likely to respond to a similar marketing campaign in the future.
 
 ##Loading the CSV
 
