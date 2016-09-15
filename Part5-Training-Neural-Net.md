@@ -66,7 +66,7 @@ We previously installed and attached the `nnet` package which we will use to tra
   
   ![01-training-iterations](Part5-Content/01-training-iterations.png)
   
-  This tells us that the training took 540 iterations to arrive at the best solution it could, and some measure of the error rate. You can see that the longer we train the model with our training data, the lower the error gets. However early on the rate of change is larger, and gets smaller as we approach an optimal solution.
+  This tells us that the training took 180 iterations to arrive at the best solution it could, and some measure of the error rate. You can see that the longer we train the model with our training data, the lower the error gets. However early on the rate of change is larger, and gets smaller as we approach an optimal solution.
 
 
 ##Visualizing the Neural Net
