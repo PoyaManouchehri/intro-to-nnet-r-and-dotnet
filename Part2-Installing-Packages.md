@@ -44,7 +44,14 @@ In order to use a package, it needs to be _attached_ to the current R session. W
   print(nnet)
   ```
 
-  You should get a brief signature of the `nnet()` function.
+  You should get a brief signature of the `nnet()` function looking something like this:
+  
+  ```R
+  function (x, ...) 
+  UseMethod("nnet")
+  <bytecode: 0x000000000c634e00>
+  <environment: namespace:nnet>
+  ```
 
 3. Now attach `scales`
   ```R
