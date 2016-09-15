@@ -48,7 +48,7 @@ We'll now write a function which given one set of inputs, will use our persisted
 2. First, load our persisted model:
   
   ```R
-  bankModel <- readRDS(file='C:/RWorkshop/MyModel.bin')
+  bankModel <- readRDS(file='C:/RWorkshop/BankModel.bin')
   means <- readRDS(file='C:/RWorkshop/Means.bin')
   sds <- readRDS(file='C:/RWorkshop/SDs.bin')
   ```
