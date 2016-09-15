@@ -38,7 +38,7 @@ We previously installed and attached the `nnet` package which we will use to tra
   ```
   
   The `nnet()` function accepts many parameters. The parameters stated above are:
-  * __Formula (Y~.):__ In R a formula expression is a first class citizen. Here we are saying `y` is a function of all other variables (denoted with a period) in our data frame. Note that `Y` is the name of our output column.
+  * __Formula (Y~.):__ In R a formula expression is a first class citizen. Here we are saying `Y` is a function of all other variables (denoted with a period) in our data frame. Note that `Y` is the name of our output column.
   
   * __trainingSet:__ Our training data.
   
