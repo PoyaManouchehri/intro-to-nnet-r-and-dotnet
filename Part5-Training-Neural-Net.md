@@ -18,7 +18,7 @@ When training a model of any kind (neural networks included) it's often a good i
   set.seed(1)
   ```
   
-4. Let's use 900 rows (about 20% of the data) for testing purposes. Taking a random selection of rows from a data frame is very simple:
+4. Let's use 900 rows (about 20% of the data) for testing purposes. Taking a random selection of rows from a data frame is made simple with the `sample()` function:
 
   ```R
   testIndices <- sample(nrow(bankData), 900)
