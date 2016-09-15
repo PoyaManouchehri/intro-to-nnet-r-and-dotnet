@@ -106,7 +106,7 @@ We now have a model trained. Let's see how well it performs over our test data. 
 
 1. Create a new function in `RWorkshop.R` called `testBankModel()`:
   ```R
-  testBankModel <- function(testData)
+  testBankModel <- function(bankModel, testSet)
   {
   }
   ```
