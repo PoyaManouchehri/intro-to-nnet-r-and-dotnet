@@ -29,7 +29,7 @@ Another useful optimization is standardizing numerical data so that different in
   numberCols <- sapply(bankData, function(x) {return(is.numeric(x) | is.integer(x))})
   ```
   
-  `sapply()` is one of several special _apply_ functions in R. It's an efficient way executes any given function on the elements of a data structure like a data frame, matrix or vector. In this case `numberCols` will hold a vector of length 20, with a `TRUE` for each column that is of integer type.
+  `sapply()` is one of several special _apply_ functions in R. It's an efficient way executes any given function on the elements of a data structure like a data frame, matrix or vector. In this case `numberCols` will hold a vector of length 20, with a `TRUE` for each column that is has a number type.
 
 3. Next we will apply the `scale()` function to these columns which centres and scales them to mean = 0, sd = 1. R allows us to use the Boolean vector created above as a way to index into our data frame:
 
