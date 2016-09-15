@@ -22,13 +22,13 @@ Clearly we don't want train our neural network from scratch every time we need t
   
 4. Finally we can persist the means and standard deviations, so that we can apply them later when a prediction needs to be made:
   ```R
-  saveRDS(means, file='C:/WorkshopPath/Means.bin')
-  saveRDS(sds, file='C:/WorkshopPath/SDs.bin')
+  saveRDS(means, file='C:/RWorkshop/Means.bin')
+  saveRDS(sds, file='C:/RWorkshop/SDs.bin')
   ```
 
 5. Persist the trained model by adding the following line just before returning in `trainBankModel()`
   ```R
-  saveRDS(bankModel, file='C:/WorkshopPath/BankModel.bin')
+  saveRDS(bankModel, file='C:/RWorkshop/BankModel.bin')
   ```
 
 6. Rerun the training from the console and ensure all three files have been saved to disk.
@@ -48,9 +48,9 @@ We'll now write a function which given one set of inputs, will use our persisted
 2. First, load our persisted model:
   
   ```R
-  bankModel <- readRDS(file='C:/WorkshopPath/MyModel.bin')
-  means <- readRDS(file='C:/WorkshopPath/Means.bin')
-  sds <- readRDS(file='C:/WorkshopPath/SDs.bin')
+  bankModel <- readRDS(file='C:/RWorkshop/MyModel.bin')
+  means <- readRDS(file='C:/RWorkshop/Means.bin')
+  sds <- readRDS(file='C:/RWorkshop/SDs.bin')
   ```
   
 3. Let's apply the scaling to the input so that it matches what we trained the model with:
@@ -103,7 +103,7 @@ For your convenience a scaffold project has been created which allows you to ent
 7. Include our script source file:
 
   ```CSharp
-  engine.Evaluate("source('C:/WorkshopPath/RWorkshop.R')");
+  engine.Evaluate("source('C:/RWorkshop/RWorkshop.R')");
   ```
   
 8. We'll now create an expression of our prediction function. Note that this will not actually call the function, but rather gives us a way to call it later with some additional arguments:
