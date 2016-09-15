@@ -73,7 +73,7 @@ We previously installed and attached the `nnet` package which we will use to tra
 
 Unlike some other machine learning methods like decision trees, a neural network is often treated as a __black box__. However to get a feel for how it is constructed, let's visualize it.
 
-1. Download the [nnet plot extension](RScripts/nnet_plot_update.R).
+1. Download the [nnet plot extension](RScripts/nnet_plot_update.R) and save it to your workshop folder.
 
 2. Open the script in RStudio.
 
