@@ -21,7 +21,7 @@ __Ultimately what we want to predict whether or not a client is likely to respon
 4. R makes it very simple to load a CSV (and other common data file types). On the first line of your function call `read.csv()`:
 
   ```R
-  bankData <- read.csv("C:/Path/ToYourCsv/BankMarketing.csv")
+  bankData <- read.csv("C:/RWorkshop/BankMarketing.csv")
   ```
   
   Note that no semicolons are used in R. 
@@ -47,7 +47,7 @@ Now that we have written and saved the script, we can call it from an R session 
 2. In order to access the function we first need to make it available in the current session. In the console enter:
 
   ```R
-  source("C:/Path/ToYourScript/BWorkshop.R")
+  source("C:/RWorkshop/RWorkshop.R")
   ```
   
 3. __RStudio__ gives you a nice shortcut for doing this. Simply check the __Source on Save__ option at the top of the script. Now saving the file will automatically execute the `source()` function in the console.
