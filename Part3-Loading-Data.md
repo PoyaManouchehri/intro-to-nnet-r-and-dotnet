@@ -54,7 +54,7 @@ Now that we have written and saved the script, we can call it from an R session 
 
 ![01-source-on-save](Part3-Content/01-source-on-save.png)
 
-4. Now call the function again
+4. Now call the function again:
 
   ```R
   loadBankMarketingData()
@@ -66,7 +66,7 @@ Now that we have written and saved the script, we can call it from an R session 
   [ reached getOption("max.print") -- omitted 3933 rows ]
   ```
   
-5. Again in the console call the function, but this time assign the result to a global variable.
+5. Call the function once more, but this time assign the result to a global variable.
 
   ```R
   data <- loadBankMarketingData()
