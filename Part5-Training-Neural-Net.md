@@ -34,7 +34,7 @@ We previously installed and attached the `nnet` package which we will use to tra
 1. In the same function, after splitting the data, call `nnet()`:
 
   ```R
-  bankModel <- nnet(y~., trainingSet, size=10, MaxNWts=5000, maxit=2000, rang: 0.1)
+  bankModel <- nnet(y~., trainingSet, size=10, MaxNWts=5000, maxit=2000)
   ```
   
   The `nnet()` function accepts many parameters. The parameters stated above are:
