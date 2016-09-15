@@ -1,6 +1,6 @@
 #1. Installing R and RStudio
 
-[R](https://www.r-project.org/) is a programming language and a software environment designed for statistics first and foremost. [RStudio](https://www.rstudio.com/) is an IDE commonly used with R which adds tooling and features such as basic debugging and visual inspection of variables.
+[R](https://www.r-project.org/) is a programming language and a software environment designed for statistics first and foremost. [RStudio](https://www.rstudio.com/) is an IDE for R which adds tooling and features such as basic debugging and visual inspection of variables.
 
 ##Installing R
 
