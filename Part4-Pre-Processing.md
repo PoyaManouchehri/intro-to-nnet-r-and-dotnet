@@ -18,7 +18,7 @@ Divorced =>   0        0        1
 For our purposes we don't need to worry about this, because the [nnet](https://cran.r-project.org/web/packages/nnet/index.html) already handles categorical data
 
 
-##Normalizing/Standardizing Numerical Columns
+##Standardizing Numerical Columns
 
 Another useful optimization is standardizing numerical data so that different inputs fall into comparable ranges. While this does not strictly affect being able to arrive at an optimal solutions, in practice it can greatly improve how quickly we arrive at it. To accomplish this, we scale and offset each column to have a mean of 0 and standard deviation of 1:
 
