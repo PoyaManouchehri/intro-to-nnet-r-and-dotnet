@@ -128,6 +128,6 @@ For your convenience a scaffold project has been created which allows you to ent
 
 
 > __A word of warning__: R itself is a single-threaded environment and R.Net it not designed for concurrency. There is a single, static instance of `REngine` which is initialized on the thread where `GetInstance()` is first called. As such, it should _not_ be used directly in a multithreaded application like a website.
-Interop with R could be useful in kicking of background R tasks but is definitely not suitable for a high volume of requests in the production environment. Either way some form of synchronization for access the `REngine` instance is required.
+Interop with R could be useful in kicking off background R tasks but is probably not suitable for a high volume of requests. Either way some form of synchronization for access to the `REngine` instance is required.
 >
 
