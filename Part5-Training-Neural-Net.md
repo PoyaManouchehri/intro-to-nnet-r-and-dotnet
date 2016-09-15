@@ -34,11 +34,11 @@ We previously installed and attached the `nnet` package which we will use to tra
 1. In the same function, after splitting the data, call `nnet()`:
 
   ```R
-  bankModel <- nnet(y~., trainingSet, size=10, MaxNWts=5000, maxit=2000)
+  bankModel <- nnet(Y~., trainingSet, size=10, MaxNWts=5000, maxit=2000)
   ```
   
   The `nnet()` function accepts many parameters. The parameters stated above are:
-  * __Formula (y~.):__ In R a formula expression is a first class citizen. Here we are saying `y` is a function of all other variables (denoted with a period) in our data frame. Note that `y` is the name of our output column.
+  * __Formula (Y~.):__ In R a formula expression is a first class citizen. Here we are saying `y` is a function of all other variables (denoted with a period) in our data frame. Note that `Y` is the name of our output column.
   
   * __trainingSet:__ Our training data.
   
