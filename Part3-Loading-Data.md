@@ -8,7 +8,7 @@ __Ultimately what we want to predict whether or not a client is likely to respon
 
 ##Loading the CSV
 
-1. Download and copy [BankMarketing.csv](Data/BankMarketing.csv) to a location of your choice
+1. Download and copy [BankMarketing.csv](https://raw.githubusercontent.com/PoyaManouchehri/intro-to-nnet-r-and-dotnet/master/Data/BankMarketing.csv) to a location of your choice
 2. In __RStudio__ create a new R script with __File > New File > R Script__. Save and call it `RWokshop.R`.
 3. Let's create a new function called `loadBankMarketingData()`:
 
