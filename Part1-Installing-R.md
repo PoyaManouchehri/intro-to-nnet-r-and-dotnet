@@ -8,11 +8,11 @@
 2. Run the installer and select the default folder.
 3. On the __Select Component__ page select __User Installation__. On a 64-bit machine this will include both 32-bit and 64-bit files.
 
-![01-installer-select-components](Part1-Content/01-installer-select-components.png)
+  ![01-installer-select-components](Part1-Content/01-installer-select-components.png)
 
 4. On the __Startup options__ page select the default __No__ option.
 
-![02-startup-options](Part1-Content/02-startup-options.png)
+  ![02-startup-options](Part1-Content/02-startup-options.png)
 
 5. Use the default options for the remainder of the screens.
 
