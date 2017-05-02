@@ -11,7 +11,7 @@ The goal of this workshop is to familiarize you with the very basics of R and RS
 5. [Training a neural network](Part5-Training-Neural-Net.md)
 6. [Integrating the model in an MVC web app](Part6-DotNet-Integration.md)
 
-##Other Resources:
+## Other Resources:
 
 * [Swirl](http://swirlstats.com/)
 * [Coursera - Neural Networks for Machine Learning](https://www.coursera.org/learn/neural-networks)
